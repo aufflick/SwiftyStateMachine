@@ -153,7 +153,8 @@
 				CBE36CC21AC443F600CFE10F /* GraphableStateMachineSchema.swift */,
 				CB4D569C1AC169A3006715E8 /* Supporting Files */,
 			);
-			path = StateMachine;
+			name = StateMachine;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		CB4D569C1AC169A3006715E8 /* Supporting Files */ = {
@@ -162,6 +163,7 @@
 				CB4D569D1AC169A3006715E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = ../StateMachine;
 			sourceTree = "<group>";
 		};
 		CB4D56A81AC169A3006715E8 /* StateMachineTests */ = {

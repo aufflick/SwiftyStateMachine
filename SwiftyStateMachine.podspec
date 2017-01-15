@@ -1,3 +1,4 @@
+# coding: utf-8
 Pod::Spec.new do |s|
   s.name         = "SwiftyStateMachine"
   s.version      = "0.3.0"
@@ -9,6 +10,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
   s.source       = { :git => "https://github.com/macoscope/SwiftyStateMachine.git", :tag => "#{s.version}" }
-  s.source_files = "StateMachine/*.swift"
+  s.source_files = "Sources/*.swift"
   s.requires_arc = true
 end
