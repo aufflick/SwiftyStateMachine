@@ -92,7 +92,7 @@ public struct GraphableStateMachineSchema<A: DOTLabelable, B: DOTLabelable, C>: 
     }
     #endif
 
-    fileprivate static func DOTDigraphGivenInitialState(_ initialState: State, transitionLogic: (State, Event) -> (State, ((Subject) -> ())?)?) -> String {
+    private static func DOTDigraphGivenInitialState(_ initialState: State, transitionLogic: (State, Event) -> (State, ((Subject) -> ())?)?) -> String {
         let states = State.DOTLabelableItems
         let events = Event.DOTLabelableItems
 

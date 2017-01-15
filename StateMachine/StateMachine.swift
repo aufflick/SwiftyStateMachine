@@ -33,7 +33,6 @@ public protocol StateMachineSchemaType {
 /// A state machine schema conforming to the `StateMachineSchemaType`
 /// protocol.  See protocol documentation for more information.
 public struct StateMachineSchema<A, B, C>: StateMachineSchemaType {
-
     public typealias State = A
     public typealias Event = B
     public typealias Subject = C
@@ -94,8 +93,8 @@ public final class StateMachine<Schema: StateMachineSchemaType> {
     /// for current state and given event, the state is changed, the optional
     /// transition block is executed, and `didTransitionCallback` is called.
     public func handleEvent(_ event: Schema.Event) {
-        guard let
-            subject = subject(),
+        guard
+            let subject = subject(),
             let (newState, transition) = schema.transitionLogic(state, event)
         else {
             return
